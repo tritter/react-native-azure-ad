@@ -1,6 +1,7 @@
 // @flow
 import React, {Component} from 'react'
-import {WebView, Dimensions, AsyncStorage, Platform} from 'react-native'
+import {WebView, Dimensions, Platform} from 'react-native'
+import AsyncStorage from '@react-native-community/async-storage'
 import CONST from './const.js'
 import ReactNativeAD from './ReactNativeAD.js'
 import Timer from 'react-timer-mixin'
