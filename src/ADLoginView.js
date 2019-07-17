@@ -109,6 +109,9 @@ export default class ADLoginView extends React.Component {
           onShouldStartLoadWithRequest={(e) => {
             return true
           }}
+          originWhitelist={['urn:ietf:wg:oauth:2.0:oob', 'https://', 'http://']}
+          allowFileAccess={true}
+          useWebKit={false}
           userAgent={this.props.userAgent}
           renderError={() => renderError(this.refs.ADLoginView.reload)}
           startInLoadingState={false}
@@ -159,7 +162,7 @@ export default class ADLoginView extends React.Component {
     let code = /((\?|\&)code\=)[^\&]+/.exec(e.url)
 
     if(this._needRedirect) {
-      // this._needRedirect = false
+      this._needRedirect = false
       return true
     }
 
