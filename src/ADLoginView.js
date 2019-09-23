@@ -1,6 +1,7 @@
 // @flow
 import React, {Component} from 'react'
-import {WebView, Dimensions, Platform} from 'react-native'
+import { Dimensions, Platform} from 'react-native'
+import { WebView } from 'react-native-webview'
 import AsyncStorage from '@react-native-community/async-storage'
 import CONST from './const.js'
 import ReactNativeAD from './ReactNativeAD.js'
