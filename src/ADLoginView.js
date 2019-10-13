@@ -113,6 +113,7 @@ export default class ADLoginView extends React.Component {
           originWhitelist={['urn:ietf:wg:oauth:2.0:oob', 'https://', 'http://']}
           allowFileAccess={true}
           useWebKit={false}
+          sharedCookiesEnabled={true}
           userAgent={this.props.userAgent}
           renderError={() => renderError(this.refs.ADLoginView.reload)}
           startInLoadingState={false}
